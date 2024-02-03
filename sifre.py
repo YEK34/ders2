@@ -8,15 +8,16 @@ for i in range(uzunluk):
 
 print("Şifren:",sifre)
 
-begenmememek = int(input("Şifreyi beğenmediysen ve yenisini istiyorsan 1 yaz: "))
-if begenmememek == 1:
-    uzunluk = int(input("Şifre uzunluğunu girin: "))
-    sifre = ""
-    for i in range(uzunluk):
-        sifre += random.choice(karakterler)
+while True:
+    begenmemek = int(input("Şifreyi beğenmediysen ve yenisini istiyorsan 1 yaz: "))
+    if begenmemek == 1:
+        uzunluk = int(input("Şifre uzunluğunu girin: "))
+        sifre = ""
+        for i in range(uzunluk):
+            sifre += random.choice(karakterler)
 
-    print("Yeni Şifren:",sifre)
+        print("Yeni Şifren:",sifre)
 
-else:
-    print("böyle bi seçenek yok")
-
+    else:
+        print("Yeni Şifren Hayırlı olsun")
+        break
